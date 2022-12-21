@@ -35,11 +35,11 @@
 					 <cloudHubDeployment>
 					      <uri>https://anypoint.mulesoft.com</uri>
 					      <muleVersion>${app.runtime}</muleVersion>
-					      <username>RamanaiduGudi2</username>
-					      <password>@Rana6117.</password>
-					      <applicationName>cicd-2</applicationName>
+					      <username>{username}</username>
+					      <password>{password}</password>
+					      <applicationName>{appname}</applicationName>
 					      <environment>Sandbox</environment>
-					      <!-- <region>US-East-2</region> -->
+					       <region>US-East-2</region> 
 					      <workers>1</workers>
 					      <workerType>Micro</workerType>
 					      <!-- <properties>
@@ -57,18 +57,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>2.1.2</version>
-                <executions>
-                    <execution>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
 		</plugins>
 	</build>
 
